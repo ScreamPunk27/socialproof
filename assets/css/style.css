@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --magenta:hsl(300, 43%, 22%);
+    --pink:hsl(333, 80%, 67%);
+    --darkGray:hsl(303, 10%, 53%);
+    --lightGray:hsl(300, 24%, 96%);
+}
+
+.page{
+    font-family: 'League Spartan', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+.first{
+    padding-top: 2rem;
+}
+
+
+.first__left h1{
+    margin-bottom: 1rem;
+    color: var(--magenta);
+    font-size: calc(16px + 3vw);
+}
+
+.first__left p{
+    color: var(--darkGray);
+    line-height: 1.5rem;
+    font-size: calc(16px + .5vw);
+}
+
+.first__right{
+    margin-top: 3rem;
+}
+
+.container-stars{
+    background-color: var(--lightGray);
+    margin-bottom: 1rem;
+    border-radius: 12px;
+    padding: 1rem;
+}
+
+.container-stars h4{
+    color: var(--magenta);
+}
+
+.stars{
+    margin-bottom: .5rem;
+}
+
+.second{
+    margin-top: 2rem;
+}
+
+.opinions{
+    background-color: var(--magenta);
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+}
+
+.opinions p{
+    color: #fff;
+}
+
+.opinions__heading{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.opinions__heading img{
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+}
+
+.container-img{
+    height: 50px;
+    width: 50px;
+}
+
+.container-name{
+    margin-left: 1rem;
+}
+
+.container-name h4:nth-child(1){
+    color: #fff;
+}
+
+.container-name h4:nth-child(2){
+    color: var(--pink);
+    font-weight: 400;
+    margin-top: 0.5rem;
+}
+
+.opinions__text{
+    padding: 1rem 0 0 0;
+    text-align: left;
+}
+
+.opinions__text p{
+    line-height: 1.5rem;
+}
+
+
+@media screen and (min-width:800px){
+    .first,.second{
+        display: flex;
+    }
+
+    .first{
+        align-items: center;
+    }
+
+    .first__left{
+        width: 40%;
+    }
+
+    .first__right{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .first__left{
+        text-align: left;
+    }
+
+    .container-stars{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 5rem;
+    }
+
+    .stars,.star-text{
+        height: 10px;
+    }
+
+    .star-text{
+        margin-left: 1rem;
+    }
+
+    .first__right{
+    }
+
+    .first__right .container-stars:nth-child(1){
+        margin-right: 4rem;
+    }
+
+    .first__right .container-stars:nth-child(2){
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .first__right .container-stars:nth-child(3){
+        margin-left: 4rem;
+    }
+    
+    .second{
+        gap: 1rem;
+    }
+
+    .opinions{
+        height: 250px;
+        justify-content: center;
+    }
+
+    .second .opinions:nth-child(2){
+        margin-top: 1rem;
+    }
+
+    .second .opinions:nth-child(3){
+        margin-top: 2rem;
+    }
+
+}
